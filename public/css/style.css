@@ -1,0 +1,528 @@
+/* Import font CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Scroll bar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #706CEA;
+    border-radius: 80rem;
+}
+
+
+/* Navbar */
+
+#navbar .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 10%;
+    position: absolute;
+    z-index: 1;
+}
+
+#navbar .logo h1 {
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#navbar .social-medias ul {
+    display: flex;
+    list-style-type: none;
+}
+
+#navbar .social-medias ul li {
+    margin: 0 1rem;
+}
+
+#navbar .social-medias ul li a {
+    width: 50px;
+    border-radius: 50px;
+    text-decoration: none;
+    background-color: #E48361;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    box-shadow: 4px 4px 1px rgb(0, 0, 0, 0.25);
+    padding: .50rem;
+    color: #fff;
+    display: flex;
+    transition: ease-in-out .3s;
+}
+
+#navbar .social-medias ul li a:hover {
+    margin-top: -.50rem;
+    transition: ease-in-out .3s;
+}
+
+#navbar .social-medias ul li a i {
+    font-size: 1.3rem;
+}
+
+
+/* main, home-page */
+
+#home-page .container {
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/Ionia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#home-page .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+#home-page .text-home {
+    position: relative;
+    z-index: 1;
+}
+
+#home-page .text-home h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+
+#home-page .text-home strong {
+    color: #F36D40;
+}
+
+#home-page .text-home p {
+    font-size: 30px;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+}
+
+#home-page .text-home button {
+    text-align: center;
+    width: 290px;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 80rem;
+    cursor: pointer;
+    font-size: 25px;
+    color: #FFFFFF;
+    background-image: linear-gradient(to right, #F46A3B, #E48361);
+}
+
+#home-page .image-home {
+    position: relative;
+    z-index: 1;
+}
+
+#home-page .container .box-team {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 3rem;
+    height: 47px;
+    border-top: 5px solid #FFFFFF;
+    border-left: 5px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+}
+
+#home-page .container .box-team h2 {
+    font-size: 23px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+#home-page .container .box-team h2::after {
+    position: absolute;
+    content: '';
+    bottom: -1rem;
+    left: 0;
+    border-radius: 80rem;
+    width: 57%;
+    background-color: #FFFFFF;
+    height: 10px;
+}
+
+
+/* side navbar*/
+
+.side-navbar .container {
+    position: absolute;
+    box-shadow: 10px 10px 3px rgb(0, 0, 0, 0.25);
+    top: 0;
+    left: -18.70rem;
+    z-index: 2;
+    height: 100vh;
+    width: 287px;
+    display: flex;
+    border-right: 5px solid #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 0;
+    flex-direction: column;
+    transition: ease-in-out .3s;
+    background-color: #E48361;
+    text-align: center;
+}
+
+
+/* Active JS*/
+
+.side-navbar .container.active {
+    left: 0;
+    transition: ease-in-out .3s;
+}
+
+.side-navbar .container .find h2 {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.side-navbar .container .menu-itens ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.side-navbar .container .menu-itens ul li {
+    padding: 1rem 0;
+}
+
+.side-navbar .container .menu-itens ul li a {
+    color: #FFFFFF;
+    font-size: 21px;
+    text-decoration: none;
+    font-weight: 400;
+    position: relative;
+    transition: ease-in-out .3s;
+}
+
+.side-navbar .container .menu-itens ul li a::after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 3px;
+    bottom: -1rem;
+    left: 0;
+    transition: ease-in-out .3s;
+}
+
+.side-navbar .container .menu-itens ul li a:hover::after {
+    transition: ease-in-out .3s;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.side-navbar .container .buttons button {
+    display: block;
+    margin: 1rem 0;
+    padding: .50rem 3rem;
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 400;
+    transition: ease-in-out .3s;
+}
+
+.side-navbar .container .buttons button:hover {
+    background-color: #fff;
+    transition: ease-in-out .3s;
+    color: rgb(133, 121, 121);
+}
+
+.side-navbar .open {
+    width: 48px;
+    height: 70px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    position: absolute;
+    right: -3rem;
+    top: 50%;
+    border-top-right-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 2rem;
+    transform: translateY(-50%);
+}
+
+.side-navbar .open i {
+    color: #E48361;
+    font-size: 1.2rem;
+}
+
+
+/* Page services */
+
+#page-services .container {
+    padding: 5% 10%;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../images/Page\ services.png');
+    position: relative;
+}
+
+#page-services .container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+#page-services .container .title {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 1rem;
+    z-index: 1;
+}
+
+#page-services .container .title h1 {
+    color: #fff;
+    font-size: 40px;
+}
+
+#page-services .container .cards {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    text-align: center;
+    margin-top: 4rem;
+    justify-content: space-around;
+}
+
+#page-services .container .cards .card {
+    width: 465px;
+    height: 404px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+    background-image: linear-gradient(to right, #3177A8, #3171BC);
+    margin: 2rem;
+    padding: 2rem;
+    position: relative;
+}
+
+#page-services .container .cards .card {
+    position: relative;
+}
+
+#page-services .container .cards .card .overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: ease-in-out .3s;
+}
+
+#page-services .container .cards .card:hover .overlay-content {
+    opacity: 1;
+}
+
+#page-services .container .cards .card .overlay-content p {
+    color: #fff;
+    width: 70%;
+    font-weight: 300;
+}
+
+#page-services .container .cards .card i {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, #4973BB, #706CEA);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -3rem;
+}
+
+#page-services .container .cards .card .card-content h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#page-services .container .cards .card .card-content p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#page-services .container .modal-alert {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    margin: 1rem;
+    width: 661px;
+    height: 113px;
+    text-align: center;
+    transition: ease-in-out 1s;
+    background-image: none;
+    background-color: rgba(49, 115, 185, 1);
+    z-index: 100;
+}
+
+#page-services .container .modal-alert h1 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#page-services .container .modal-alert .bar {
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    transition: .3s;
+    height: 10px;
+    left: 0;
+}
+
+
+/* page comments */
+
+#home-comments {
+    width: 100%;
+    padding: 5% 10%;
+    background-image: radial-gradient(#3A2268, #4C2BB0);
+    position: relative;
+}
+
+#home-comments .title {
+    width: 100%;
+    text-align: center;
+}
+
+#home-comments .title h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+#home-comments .content-comments {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* box */
+
+#home-comments .content-comments .left-comments .box {
+    height: 300px;
+    width: 700px;
+    box-shadow: 0px 0px 3px 3px rgb(0, 0, 0, 0.25);
+    overflow-y: scroll;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-comments .content-comments .left-comments .box .content-box {
+    background: #4B3191;
+    width: 626px;
+    height: 200px;
+    margin: 1.5rem 1rem;
+    padding: 3rem;
+    border-radius: .15rem;
+    box-shadow: -10px 0px 1px rgb(0, 0, 0, 0.20);
+    position: relative;
+}
+
+#home-comments .content-comments .left-comments .box .content-box img {
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    width: 74px;
+    border: 3px solid #fff;
+    height: 74px;
+}
+
+#home-comments .content-comments .left-comments .box .content-box h1 {
+    color: #fff;
+    font-size: 23px;
+    text-align: left;
+    width: 70%;
+}
+
+#home-comments .content-comments .left-comments .box .content-box p {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-weight: 350;
+    right: 0;
+    margin: 1rem;
+}
+
+#home-comments .content-comments .community h1:hover {
+    transition: ease-in-out .3s;
+    color: #706CEA;
+}

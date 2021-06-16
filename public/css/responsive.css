@@ -1,0 +1,95 @@
+@media screen and (max-width: 1280px) {
+    #home-page .image-home {
+        display: none;
+    }
+    #home-page .text-home {
+        text-align: center;
+    }
+    #page-services .container .cards {
+        flex-wrap: wrap;
+    }
+    #home-comments .content-comments .right-comments {
+        display: none;
+    }
+    #home-comments .content-comments {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #home-page .text-home h1 {
+        font-size: 30px;
+    }
+    #home-page .text-home p {
+        font-size: 20px;
+    }
+    #home-page .text-home button {
+        width: 200px;
+        height: 40px;
+        font-size: 20px;
+    }
+    #navbar .container .social-medias {
+        position: absolute;
+        right: 0;
+    }
+    #navbar .social-medias ul {
+        display: block;
+    }
+    #navbar .social-medias ul li {
+        margin: 1rem;
+    }
+    #home-page .container .box-team {
+        width: 100%;
+        padding: 1rem;
+    }
+    #home-page .container .box-team h2 {
+        font-size: 15px;
+    }
+    #home-page .container .box-team h2::after {
+        display: none;
+    }
+    #home-comments .title h1 {
+        font-size: 20px;
+    }
+    #page-services .container .modal-alert {
+        width: 400px;
+    }
+    #home-comments .content-comments .left-comments .box {
+        width: 500px;
+    }
+    #home-comments .content-comments .left-comments .box .content-box {
+        width: 400px;
+        padding: 2rem;
+    }
+    #home-comments .content-comments .left-comments .box .content-box h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #home-comments .content-comments .left-comments .box {
+        width: 400px;
+    }
+    #home-comments .content-comments .left-comments .box .content-box {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #navbar .social-medias ul li a {
+        width: 30px;
+        height: 30px;
+    }
+    #navbar .social-medias ul li a i {
+        font-size: 15px;
+    }
+    #home-comments .content-comments .left-comments .box {
+        width: 350px;
+    }
+    #home-comments .content-comments .left-comments .box .content-box {
+        width: 350px;
+    }
+}
